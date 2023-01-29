@@ -1,6 +1,6 @@
 [build]
-  command = "pip install -r requirements.txt"
-  PYTHON_VERSION==3.9
+  command = "python3 -m pip install -r requirements.txt"
+  command=" PYTHON_VERSION==3.9"
   publish = "/build"
   base ="/"
 

@@ -1,5 +1,6 @@
 [build]
-  command = "npm run build"
+  command = "pip install -r requirements.txt"
+  PYTHON_VERSION==3.7
   publish = "/build"
   base ="/"
 

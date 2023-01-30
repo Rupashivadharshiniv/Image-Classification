@@ -1,4 +1,4 @@
 PyWavelets==0.5.2
 opencv-python==3.4.3.18
 seaborn==0.8.1
-jupyter-notebook=0.7.0
+jupyter-notebook=6.4.8

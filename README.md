@@ -10,5 +10,5 @@ The structure of the folders are:
     *UI: Front-end code for the website    
     *Model:Contains python notebook for model-building    
     *Server: Python flask server
-    *images_dataset: Dataset used in the model training
+    *dataset: Dataset used in the model training
 

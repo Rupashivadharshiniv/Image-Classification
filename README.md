@@ -7,7 +7,12 @@ https://user-images.githubusercontent.com/111634567/222919249-7b327b5e-69bb-485f
 This is a web app which classifies my five favorite characters from the Harry Potter series!
 
 The structure of the folders are:
-    >UI:
-    >Model:
-    >Server:
+    
+    *UI: Front-end code for the website
+    
+    *Model:Contains python notebook for model-building
+    
+    *Server: Python flask server
+    
+    *images_dataset: Dataset used in the model training
 

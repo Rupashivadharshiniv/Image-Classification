@@ -2,79 +2,23 @@ import streamlit as st
 
 def main():
     st.set_page_config(
-        page_title="Sports Person Classifier",
+        page_title="Harry Potter Characters Classifier",
         page_icon=":athletic_shoe:",
         layout="wide"
     )
 
     st.title("Harry Potter Characters Classifier")
-
     st.markdown(
         """
         Welcome to the Harry Potter Characters Classifier! Upload an image, and the classifier will predict the character.
         """
     )
+with open('app.css') as f:
+    st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True>)
+   
+    
 
-    # Include CSS styles using st.markdown
-    st.markdown("""
-        <style>
-            .card-wrapper {
-                margin: 5% 0;
-            }
-            
-            .custom-circle-image {
-                width: 10vw; /* note I used vw not px for better responsiveness */
-                height: 10vw;
-            }
-
-            .custom-circle-image img {
-                object-fit: cover;
-            }
-
-            .card-title {
-                letter-spacing: 1.1px;
-            }
-
-            .card-text {
-                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                font-size: 20px;
-                line-height: initial;
-            }
-
-            .dropzone {
-                border-style: dashed;
-            }
-
-            .error {
-                font-family: MerriweatherRegular;
-                font-size: 30px;
-                line-height: initial;
-                color: blue;
-                text-align: center;
-            }
-
-            #classTable {
-                font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-                border-collapse: collapse;
-                width: 100%;
-            }
-
-            #classTable td, #classTable th {
-                border: 1px solid #ddd;
-                padding: 8px;
-            }
-
-            #classTable th {
-                padding-top: 12px;
-                padding-bottom: 12px;
-                text-align: left;
-                background-color: #4CAF50;
-                color: white;
-            }
-        </style>
-    """)
-
-    # The rest of your Streamlit app code here...
+     
 
 if __name__ == "__main__":
     main()

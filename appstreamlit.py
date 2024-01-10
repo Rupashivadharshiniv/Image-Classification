@@ -15,7 +15,7 @@ def main():
         """
     )
     st.markdown(
-    """
+   
     <style>
     .card-wrapper {
     margin: 5% 0;
@@ -73,7 +73,7 @@ def main():
   color: white;
 }
     </style>
-    """
+
 )
 
 

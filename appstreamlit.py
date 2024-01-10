@@ -14,69 +14,70 @@ def main():
         Welcome to the Harry Potter Characters Classifier! Upload an image, and the classifier will predict the character.
         """
     )
-    st.markdown(
-   
-    <style>
-    .card-wrapper {
-    margin: 5% 0;
-  }
-  
-/* You can adjust the image size by increasing/decreasing the width, height */
-.custom-circle-image {
-  width: 10vw; /* note i used vw not px for better responsive */
-  height: 10vw;
-}
 
-.custom-circle-image img {
-  object-fit: cover;
-}
+    # Include CSS styles using st.markdown
+    st.markdown("""
+        <style>
+            .card-wrapper {
+                margin: 5% 0;
+            }
+            
+            .custom-circle-image {
+                width: 10vw; /* note I used vw not px for better responsiveness */
+                height: 10vw;
+            }
 
-.card-title {
-  letter-spacing: 1.1px;
-}
+            .custom-circle-image img {
+                object-fit: cover;
+            }
 
-.card-text {
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 20px;
-  line-height: initial;
-}
+            .card-title {
+                letter-spacing: 1.1px;
+            }
 
-.dropzone {
-  border-style: dashed;
-}
+            .card-text {
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 20px;
+                line-height: initial;
+            }
 
+            .dropzone {
+                border-style: dashed;
+            }
 
-.error {
-  font-family: MerriweatherRegular;
-  font-size: 30px;
-  line-height: initial;
-  color: blue;
-  text-align: center;
-}
+            .error {
+                font-family: MerriweatherRegular;
+                font-size: 30px;
+                line-height: initial;
+                color: blue;
+                text-align: center;
+            }
 
-#classTable {
-  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
+            #classTable {
+                font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+            }
 
-#classTable td, #classTable th {
-  border: 1px solid #ddd;
-  padding: 8px;
-}
+            #classTable td, #classTable th {
+                border: 1px solid #ddd;
+                padding: 8px;
+            }
 
-#classTable th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
-  background-color: #4CAF50;
-  color: white;
-}
-    </style>
+            #classTable th {
+                padding-top: 12px;
+                padding-bottom: 12px;
+                text-align: left;
+                background-color: #4CAF50;
+                color: white;
+            }
+        </style>
+    """)
 
-)
+    # The rest of your Streamlit app code here...
 
-
+if __name__ == "__main__":
+    main()
     # Your Dropzone code
     uploaded_file = st.file_uploader("Choose an image...", type="jpg")
 
